@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import java.util.ResourceBundle;
 
 import api.payload.User;
+import api.utilities.helpers.RestReqFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -29,6 +30,7 @@ public class UserEndPoints2 {
 			
 			
 			Response response=given()
+					.filter(new RestReqFilter())
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
 				.body(payload)
@@ -46,6 +48,7 @@ public class UserEndPoints2 {
 			
 			Response response=given()
 							.pathParam("username",userName)
+							.filter(new RestReqFilter())
 			.when()
 				.get(get_url);
 				
@@ -58,6 +61,7 @@ public class UserEndPoints2 {
 			String update_url=getURL().getString("update_url");
 			
 			Response response=given()
+					.filter(new RestReqFilter())
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
 				.pathParam("username", userName)
@@ -75,6 +79,7 @@ public class UserEndPoints2 {
 			
 			Response response=given()
 							.pathParam("username",userName)
+							.filter(new RestReqFilter())
 			.when()
 				.delete(delete_url);
 				

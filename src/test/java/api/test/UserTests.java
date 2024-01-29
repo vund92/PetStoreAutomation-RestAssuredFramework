@@ -43,13 +43,13 @@ public class UserTests {
 	@Test(priority=1)
 	public void testPostUser()
 	{
-		logger.info("********** Creating user  ***************");
+		logger.info("********** Creating user ***************");
 		Response response=UserEndPoints.createUser(userPayload);
 		response.then().log().all();
 		
 		Assert.assertEquals(response.getStatusCode(),200);
 		
-		logger.info("**********User is creatged  ***************");
+		logger.info("********** User is created ***************");
 			
 	}
 	
@@ -62,7 +62,7 @@ public class UserTests {
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(),200);
 		
-		logger.info("**********User info  is displayed ***************");
+		logger.info("********** User info is displayed ***************");
 		
 	}
 	
@@ -91,7 +91,7 @@ public class UserTests {
 	@Test(priority=4)
 	public void testDeleteUserByName()
 	{
-		logger.info("**********   Deleting User  ***************");
+		logger.info("********** Deleting User ***************");
 		
 		Response response=UserEndPoints.deleteUser(this.userPayload.getUsername());
 		Assert.assertEquals(response.getStatusCode(),200);
