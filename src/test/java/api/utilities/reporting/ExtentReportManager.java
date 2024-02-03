@@ -69,7 +69,7 @@ public class ExtentReportManager {
         Setup.extentTest.get().fail(log);
     }
     public static void logInfoDetails(String log) {
-        Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.GREY));
+        Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.TEAL));
     }
     public static void logWarningDetails(String log) {
         Setup.extentTest.get().warning(MarkupHelper.createLabel(log, ExtentColor.YELLOW));
