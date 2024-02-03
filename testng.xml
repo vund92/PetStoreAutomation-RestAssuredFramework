@@ -3,7 +3,8 @@
 <suite name="PetSuite">
 	
 	<listeners>
-		<listener class-name="api.utilities.ExtentReportManager" />
+		<listener class-name="api.utilities.reporting.Setup" />
+		<!-- <listener class-name="api.utilities.ExtentReportManager" /> -->
 	</listeners>
 
 	<test thread-count="5" name="PetTests">

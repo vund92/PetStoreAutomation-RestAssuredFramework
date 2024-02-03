@@ -10,7 +10,7 @@
         <RollingFile name="fileLogger" fileName="${basePath}/web_testing.log"
                      filePattern="${basePath}/dailyLog-%d{yyyy-MM-dd}-%i.log">
             <PatternLayout>
-                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L - %msg%n</pattern>
+                <pattern>%n[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L %n%msg%n</pattern>
             </PatternLayout>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
@@ -19,7 +19,7 @@
         </RollingFile>
         <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
             <PatternLayout>
-                <pattern>%highlight{[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L - %msg%n}
+                <pattern>%n%highlight{[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c{1}:%L %n%msg%n}
                 </pattern>
             </PatternLayout>
         </Console>
@@ -34,3 +34,5 @@
         </Root>
     </Loggers>
 </Configuration>
+<!-- khong co log4j2.xml thi log cung auto tu print ra console -->
+<!-- By default, if no specific configuration is provided, Log4j2 will log to the console. -->

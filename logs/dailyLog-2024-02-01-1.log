@@ -1,0 +1,234 @@
+[INFO ] 2024-02-01 06:50:34.439 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1010"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1010,"username":"testuser1","firstName":"John","lastName":"Canedy","email":"a@gmail.com","password":"test@1","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 06:50:34.447 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 06:50:35.763 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1020"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1020,"username":"testuser2","firstName":"Kim","lastName":"Kom","email":"b@gmail.com","password":"test@2","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 06:50:35.764 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 06:50:37.043 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1030"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1030,"username":"testuser3","firstName":"Smith","lastName":"Steve","email":"c@gmail.com","password":"test@3","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 06:50:37.043 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 06:50:38.420 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser1"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser1 \
+
+[INFO ] 2024-02-01 06:50:38.421 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 06:50:39.720 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser2"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser2 \
+
+[INFO ] 2024-02-01 06:50:39.720 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 06:50:41.045 RestReqFilter:42 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser3"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser3 \
+
+[INFO ] 2024-02-01 06:50:41.046 RestReqFilter:49 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:39.664 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1010"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1010,"username":"testuser1","firstName":"John","lastName":"Canedy","email":"a@gmail.com","password":"test@1","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 07:35:39.667 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:40.955 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1020"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1020,"username":"testuser2","firstName":"Kim","lastName":"Kom","email":"b@gmail.com","password":"test@2","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 07:35:40.956 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:42.232 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1030"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1030,"username":"testuser3","firstName":"Smith","lastName":"Steve","email":"c@gmail.com","password":"test@3","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 07:35:42.233 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:43.597 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser1"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser1 \
+
+[INFO ] 2024-02-01 07:35:43.597 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:44.917 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser2"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser2 \
+
+[INFO ] 2024-02-01 07:35:44.918 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 07:35:46.213 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser3"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser3 \
+
+[INFO ] 2024-02-01 07:35:46.214 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:45.144 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1010"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1010,"username":"testuser1","firstName":"John","lastName":"Canedy","email":"a@gmail.com","password":"test@1","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 09:41:45.147 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:46.461 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1020"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1020,"username":"testuser2","firstName":"Kim","lastName":"Kom","email":"b@gmail.com","password":"test@2","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 09:41:46.461 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:47.760 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1030"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request POST https://petstore.swagger.io/v2/user \
+--header 'Accept:application/json, application/javascript, text/javascript, text/json'\
+--header 'Content-Type:application/json'\
+--data-raw '{"id":1030,"username":"testuser3","firstName":"Smith","lastName":"Steve","email":"c@gmail.com","password":"test@3","phone":"1234567897","userStatus":0}'
+[INFO ] 2024-02-01 09:41:47.760 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:49.090 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser1"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser1 \
+
+[INFO ] 2024-02-01 09:41:49.091 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:50.394 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser2"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser2 \
+
+[INFO ] 2024-02-01 09:41:50.394 RestReqFilter:46 - x-mm-correlation-id=null
+[INFO ] 2024-02-01 09:41:51.700 RestReqFilter:39 - Response code: 200
+Response Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "testuser3"
+}
+You can use following cURL to reproduce the same request
+
+curl --location --request DELETE https://petstore.swagger.io/v2/user/testuser3 \
+
+[INFO ] 2024-02-01 09:41:51.700 RestReqFilter:46 - x-mm-correlation-id=null
